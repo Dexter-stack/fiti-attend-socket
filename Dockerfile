@@ -33,8 +33,8 @@ RUN php artisan key:generate
 RUN chown -R www-data:www-data /app/storage
 RUN chmod -R 775 /app/storage
 
-# Expose port 9000 for FastCGI
-EXPOSE 9000
+# Expose port 8000 for the built-in PHP server
+EXPOSE 8000
 
-# Start PHP-FPM
-CMD ["php-fpm"]
+# Use the built-in PHP server for development
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
