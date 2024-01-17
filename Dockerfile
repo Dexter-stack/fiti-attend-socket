@@ -1,5 +1,5 @@
 # Use the official PHP image as base
-FROM php:7.4-fpm
+FROM php:8.0.2
 
 # Set working directory
 WORKDIR /app
