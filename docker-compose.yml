@@ -22,7 +22,7 @@ services:
       - PUSHER_APP_ID=1734857
       - PUSHER_APP_KEY=fda8cde548a674208dc7
       - PUSHER_APP_SECRET=f61721a57f6a71019b09
-      - PUSHER_HOST=localhost
+      - PUSHER_HOST=https://testsocket-yl4o.onrender.com
       - PUSHER_PORT=443
       - PUSHER_SCHEME=https
       - PUSHER_APP_CLUSTER=mt1
