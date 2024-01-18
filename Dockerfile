@@ -27,7 +27,7 @@ RUN composer install --no-interaction --no-scripts
 
 # Set up Laravel
 
-RUN php artisan key:generate
+
 RUN php artisan config:clear
 
 # Set permissions
