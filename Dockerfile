@@ -35,7 +35,7 @@ RUN chmod -R 775 /app/storage
 
 # Expose port 8000 for the built-in PHP server
 EXPOSE 8000
-RUN php artisan config:cache
+RUN php artisan config:clear
 
 # Use the built-in PHP server for development
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]

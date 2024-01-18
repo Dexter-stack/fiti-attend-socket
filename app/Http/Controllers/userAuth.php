@@ -298,7 +298,7 @@ class userAuth extends Controller
 
     public function testSocket(Request $request){
         event(new TestingSocket($request->message,$request->type));
-        dd("dexter");
+        dd("dexter"); 
         return response( array("status"=>200),200);
     }
 
