@@ -27,6 +27,11 @@ services:
       - PUSHER_SCHEME=https
       - PUSHER_APP_CLUSTER=mt1
       - BROADCAST_DRIVER=pusher
+      - CACHE_DRIVER=file
+      - FILESYSTEM_DISK=local
+      - QUEUE_CONNECTION=sync
+      - SESSION_DRIVER=file
+      - SESSION_LIFETIME=120r
 
 
   mysql:
