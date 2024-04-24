@@ -29,7 +29,7 @@ RUN composer install --no-interaction --no-scripts
 
 
 RUN php artisan config:clear
-RUN php artisan migrate
+
 
 # Set permissions
 RUN chown -R www-data:www-data /app/storage
